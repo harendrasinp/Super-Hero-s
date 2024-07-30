@@ -81,7 +81,7 @@ body{
 /* ------------------------------------media for 415px--------------------------- */
 @media(max-width:415px){
     #main-fram{
-        height:912px;
+        height:800px;
     
     }
 #title-bar img{
