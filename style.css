@@ -78,9 +78,10 @@ body{
    border: 10px;
 }
 }
+/* ------------------------------------media for 515px--------------------------- */
 @media(max-width:515px){
     body{
-        height: 650px;
+        height: 850px;
     }
 #title-bar img{
     position: relative;
