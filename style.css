@@ -78,10 +78,11 @@ body{
    border: 10px;
 }
 }
-/* ------------------------------------media for 515px--------------------------- */
-@media(max-width:515px){
-    body{
-        height:550px;
+/* ------------------------------------media for 415px--------------------------- */
+@media(max-width:415px){
+    #main-fram{
+        height:912px;
+    
     }
 #title-bar img{
     position: relative;
