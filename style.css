@@ -1,0 +1,113 @@
+body{
+    padding: 0px;
+    margin: 0px;;
+}
+#main-fram{
+    background-image: linear-gradient(to right top, #e72192, #d233a6, #b943b7, #9950c4, #745acc, #6564d2, #566dd6, #4675d8, #5882de, #688ee4, #789bea, #88a8f0);
+    /* background-color:#3b5677; */
+    height:605.5px;
+    padding-top:1px;
+    text-align: center;
+}
+
+#title-bar{
+    margin-top: 60px;
+    overflow: hidden;
+    height: 300px;
+}
+#title-bar img{
+    position: relative;
+    margin-top: -400px;
+    width:150px ;
+    height:180px;
+    animation: myfirst 1.5s forwards;
+    animation-direction: initial;
+  }
+  
+  @keyframes myfirst {
+    0%   { top: 5px;}
+    100% {top:160px;}
+  }
+
+#game-title{
+    font-size: 35px;
+    color: rgb(246, 244, 248);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* ------------------------search button------------------------- */
+#search{
+    margin-top: -81px;
+    display: flex;
+    justify-content: center;
+    animation: fadein 1s;
+}
+#search button{
+        padding: 12px;
+        border-radius: 6px;
+        border: 0px;
+        background-color: #88a8f0;
+        font-size: 15px;
+}
+#search input{
+   height: 38px;
+   width: 500px;
+   border-radius: 6px;
+   border: 0px;
+}
+@keyframes fadein{
+    10%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* ---------------------------------media Query----------------------------- */
+@media(max-width:660px){
+#search button{
+    padding: 12px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #88a8f0;
+    font-size:15px;
+}
+#search input{
+   height: 38px;
+   width: 300px;
+   border-radius: 6px;
+   border: 10px;
+}
+}
+@media(max-width:515px){
+    body{
+        height: 650px;
+    }
+#title-bar img{
+    position: relative;
+    margin-top: -180px;
+    width:110px ;
+    height:130px;
+    animation: myfirst 1.5s forwards;
+    animation-direction: initial;
+}
+@keyframes myfirst {
+    0%   { top: 5px;}
+    100% {top:110px;}
+  }
+#search{
+    margin-top: -120px;
+}
+#search button{
+    padding: 12px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #88a8f0;
+    font-size: 12px;
+}
+#search input{
+   height: 38px;
+   width: 250px;
+   border-radius: 6px;
+   border: 0px;
+}
+}
