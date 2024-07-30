@@ -81,7 +81,7 @@ body{
 /* ------------------------------------media for 515px--------------------------- */
 @media(max-width:515px){
     body{
-        height: 850px;
+        height:550px;
     }
 #title-bar img{
     position: relative;
