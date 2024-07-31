@@ -95,7 +95,7 @@ body{
     }
 #game-title{
     font-size:22px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(146, 12, 12);
     }
 #search input{
     background-color: #fcfbfb;
