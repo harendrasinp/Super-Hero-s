@@ -75,7 +75,6 @@ body{
     padding: 12px;
     border-radius: 6px;
     border: 0px;
-    background-color: #88a8f0;
     font-size:15px;
 }
 #search input{
@@ -93,7 +92,6 @@ body{
     }
 #game-title{
     font-size:22px;
-    color: rgb(246, 244, 248);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 #title-bar img{
@@ -115,7 +113,6 @@ body{
     padding: 12px;
     border-radius: 6px;
     border: 0px;
-    background-color: #88a8f0;
     font-size: 12px;
 }
 #search input{
