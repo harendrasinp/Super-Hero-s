@@ -80,9 +80,14 @@ body{
 }
 /* ------------------------------------media for 415px--------------------------- */
 @media(max-width:415px){
-    #main-fram{
-        height:800px;
+#main-fram{
+    height:800px;
     
+    }
+#game-title{
+    font-size: 15px;
+    color: rgb(246, 244, 248);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 #title-bar img{
     position: relative;
