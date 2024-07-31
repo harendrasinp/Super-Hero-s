@@ -60,6 +60,9 @@ body{
    background-color: #fcfbfb;
    opacity: 0.8;
 }
+#under-con{
+    color: white;
+}
 @keyframes fadein{
     10%{
         transform: scale(0);
