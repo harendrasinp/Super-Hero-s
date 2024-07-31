@@ -14,7 +14,6 @@ body{
    color: #e10707;
    font-size:100px;
    opacity: 0.2;
-
 }
 #title-bar{
     margin-top: 60px;
@@ -69,7 +68,7 @@ body{
         transform: scale(1);
     }
 }
-/* ---------------------------------media Query----------------------------- */
+/* ---------------------------------media 650px Query----------------------------- */
 @media(max-width:660px){
 #search button{
     padding: 12px;
@@ -94,6 +93,10 @@ body{
     font-size:22px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+#main-fram h1{
+        font-size:85px;
+        opacity: 0.2;
+ }
 #title-bar img{
     position: relative;
     margin-top: -180px;
