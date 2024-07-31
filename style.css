@@ -64,6 +64,7 @@ body{
     color: white;
     font-size: x-large;
     margin-top: -45px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @keyframes fadein{
     10%{
