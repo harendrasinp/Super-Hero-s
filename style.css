@@ -62,6 +62,8 @@ body{
 }
 #under-con{
     color: white;
+    font-size: x-large;
+    margin-top: -45px;
 }
 @keyframes fadein{
     10%{
