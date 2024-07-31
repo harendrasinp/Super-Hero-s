@@ -76,6 +76,10 @@ body{
     border: 0px;
     font-size:15px;
 }
+#game-title{
+    font-size: 35px;
+    color:rgb(146, 12, 12);
+}
 #search input{
    height: 38px;
    width: 300px;
@@ -93,6 +97,10 @@ body{
     font-size:22px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+#search input{
+    background-color: #fcfbfb;
+    opacity: 0.8;
+}
 #main-fram h1{
         font-size:85px;
         opacity: 0.2;
