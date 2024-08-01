@@ -118,5 +118,8 @@ body{
     #game-title{
         color: white;
         font-size:25px;
-    };
+    }
+    #search input{
+     width: 60%;
+    }
 }
