@@ -1,81 +1,88 @@
 body{
+    margin: 0px;
     padding: 0px;
-    margin: 0px;;
-    background-color:black;
+    background-color: black;
 }
-#main-fram{
-    height:100%;
-    padding-top:1px;
-    text-align: center;
-    opacity: 0.9;
-}
-#main-fram h1{
-   color: #e10707;
-   font-size:100px;
-   opacity: 0.2;
-   margin-top: -190px;
-   z-index: -1;
-}
-#title-bar{
-    margin-top: 60px;
-    overflow: hidden;
-    height: 300px;
-}
-#title-bar img{
-    position: relative;
-    margin-top: -400px;
-    width:150px ;
-    height:180px;
-    animation: myfirst 1.5s forwards;
-    animation-direction: initial;
-  }
-  
-  @keyframes myfirst {
-    0%   { top: 5px;}
-    100% {top:160px;}
-  }
 
-#game-title{
-    font-size: 35px;
-    color:rgb(146, 12, 12);
-}
-/* ------------------------search button------------------------- */
-#search{
-    margin-top: -81px;
+#title-bar{
+    margin-top: 10px;
+    height: 300px;
     display: flex;
     justify-content: center;
-    animation: fadein 1s;
+    align-items: center;
+    flex-direction: column;
 }
-@keyframes fadein{
-    10%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
+/* --------------------title-content-for-gametitle-marvel-image-------------------------------- */
+#title-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 360px;
 }
+/* -------------------game-title---------------------------------- */
+#game-title{
+    color: white;
+    font-size: 50px;
+}
+/* ------------------marvel-bakcground------------------------- */
+#marvel{
+    font-size:85px;
+    z-index: -1;
+    opacity: 0.6;
+    color: rgb(212, 9, 9);
+}
+/* --------------------spider-man-image------------------------ */
+#img-div{
+    margin-top: -19px;
+    overflow: hidden;
+    height: 160px;
+}
+#img-div img{
+    margin-top: -120px;
+    position: relative;
+    width: 120px;
+    height:160px;
+    animation: move 1.6s forwards;
+    animation-direction: initial;
+}
+@keyframes move{
+    0%{top:0px}
+    100%{top:120px}
+}
+/* -----------------search-box-section------------------------ */
+#search{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fedin 1.5s;
+}
+@keyframes fedin{
+    0%{transform: scale(0.5);};
+    100%{transform: scale(1.5);}
+}
+
 #search button{
-        padding: 12px;
-        border-radius: 6px;
-        border: 0px;
-        background-color: #811a1a;
-        font-size: 15px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgb(163, 5, 5);
+    cursor: pointer;
+    padding:10px;
+    color: white;
+    font-size: 15px;
 }
 #search input{
-   height: 38px;
-   width: 500px;
-   border-radius: 6px;
-   border: 0px;
-   background-color: #fcfbfb;
-   opacity: 0.8;
+    width: 35%;
+    height:30px;
+    border: 0px;
+    margin: 5px;
+    background-color: rgb(223, 223, 216);
+    border-radius: 6px;
+    color: rgb(76, 45, 45);
+    font-size: 20px;
 }
-#under-con{
-    color: white;
-    font-size:25px;
-    margin-top: -45px;
-    /* font-family:; */
-    font-weight: 100;
-}
+/* ------------------------------------Api-image-section----------------------------------- */
 #images{
     display:grid;
     grid-template-columns: repeat(4,1fr);
@@ -105,91 +112,4 @@ body{
 .name-div{
     font-size: larger;
     color: aliceblue;
-}
-/* ---------------------------------media 650px Query----------------------------- */
-@media(max-width:860px){
-#search button{
-    padding: 12px;
-    border-radius: 6px;
-    border: 0px;
-    font-size:15px;
-}
-#game-title{
-    font-size: 35px;
-    color:rgb(146, 12, 12);
-}
-#search input{
-   height: 38px;
-   width: 300px;
-   border-radius: 6px;
-   border: 10px;
-}
-#images{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    /* gap:1rem; */
-    margin-left:1%;
-    margin-top: 15%;
-}
-.main-div{
-    width:150px;
-    height:230px;
-    background-color: rgb(74, 119, 191);
-    border-radius: 6px;
-    padding: 5px;
-    opacity: 0.8;
-    box-shadow: 0px 0px 5px 2px pink;
-    transition: transform 1s ;
-}
-.img-div img{
-    width:100%;
-    height:150px;
-    border-radius: 6px;
-}
-}
-/* ------------------------------------media for 415px--------------------------- */
-@media(max-width:415px){
-#main-fram{
-    height:750px;
-    
-    }
-#game-title{
-    font-size:22px;
-    color:rgb(146, 12, 12);
-    }
-#search input{
-    background-color: #fcfbfb;
-    opacity: 0.8;
-}
-#main-fram h1{
-        font-size:85px;
-        opacity: 0.2;
- }
-#title-bar img{
-    position: relative;
-    margin-top: -180px;
-    width:110px ;
-    height:130px;
-    animation: myfirst 1.5s forwards;
-    animation-direction: initial;
-}
-@keyframes myfirst {
-    0%   { top: 5px;}
-    100% {top:110px;}
-  }
-#search{
-    margin-top: -120px;
-}
-#search button{
-    padding: 12px;
-    border-radius: 6px;
-    border: 0px;
-    font-size: 12px;
-}
-#search input{
-   height: 38px;
-   width: 250px;
-   border-radius: 6px;
-   border: 0px;
-}
 }
