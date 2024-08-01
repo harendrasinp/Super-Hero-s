@@ -1,11 +1,10 @@
 body{
     padding: 0px;
     margin: 0px;;
+    background-color:black;
 }
 #main-fram{
-    /* background-image: linear-gradient(to right top, #e72192, #d233a6, #b943b7, #9950c4, #745acc, #6564d2, #566dd6, #4675d8, #5882de, #688ee4, #789bea, #88a8f0); */
-    background-color:black;
-    height:605.5px;
+    height:100%;
     padding-top:1px;
     text-align: center;
     opacity: 0.9;
@@ -14,6 +13,8 @@ body{
    color: #e10707;
    font-size:100px;
    opacity: 0.2;
+   margin-top: -190px;
+   z-index: -1;
 }
 #title-bar{
     margin-top: 60px;
@@ -45,6 +46,14 @@ body{
     justify-content: center;
     animation: fadein 1s;
 }
+@keyframes fadein{
+    10%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 #search button{
         padding: 12px;
         border-radius: 6px;
@@ -62,17 +71,40 @@ body{
 }
 #under-con{
     color: white;
-    font-size: x-large;
+    font-size:25px;
     margin-top: -45px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:; */
+    font-weight: 100;
 }
-@keyframes fadein{
-    10%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
+#images{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-left: 100px;
+    margin-top: 10%;
+}
+.main-div{
+    width: 220px;
+    height: 300px;
+    background-color: rgb(74, 119, 191);
+    border-radius: 6px;
+    padding: 5px;
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px 2px pink;
+    transition: transform 1s ;
+}
+.main-div:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.img-div img{
+    width:100%;
+    height:200px;
+    border-radius: 6px;
+}
+.name-div{
+    font-size: larger;
+    color: aliceblue;
 }
 /* ---------------------------------media 650px Query----------------------------- */
 @media(max-width:660px){
