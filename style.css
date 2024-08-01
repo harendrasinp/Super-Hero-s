@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    padding: 0px;
+    padding:0px;
     background-color: black;
 }
 
@@ -112,4 +112,11 @@ body{
 .name-div{
     font-size: larger;
     color: aliceblue;
+}
+/* --------------------------media-query-for-460--------------------------- */
+@media only screen and  (max-width:650px){
+    #game-title{
+        color: white;
+        font-size:25px;
+    };
 }
