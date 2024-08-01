@@ -33,10 +33,13 @@ function loopfunction(heros){
     namDiv.classList.add("name-div");
     namDiv.innerHTML=`Name: ${heroName}`;
     // 
+    // -----------------fevourit-button-----------------------
+    const favBtn=document.createElement("button");
     // ----------------------------------------------------------
       mainDiv.append(imgDiv);
       imgs.append(mainDiv);
       mainDiv.append(namDiv)
+      mainDiv.append(favBtn)
       
   });
 }
