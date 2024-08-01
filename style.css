@@ -83,12 +83,15 @@ body{
     font-size: 20px;
 }
 /* ------------------------------------Api-image-section----------------------------------- */
+#api-Image-fram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #images{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
-    margin-left: 100px;
-    margin-top: 10%;
 }
 .main-div{
     width: 220px;
