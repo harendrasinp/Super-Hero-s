@@ -161,7 +161,7 @@ body{
     }
     .main-fram{
         width:160px;
-        height:380px;
+        height:320px;
         padding: 10px;
         background-image: linear-gradient(pink,rgb(242, 15, 38),rgb(102, 86, 245));
         border-radius: 10px;  
@@ -171,5 +171,36 @@ body{
         height:210px ;
         border-radius: 10px;
         transition: transform 1.5s; 
+    }
+    /* ---------------------------detail------------------------- */
+    #detail-div{
+        margin-top:6px;
+    }
+    .h-id{
+        color: white;
+        font-size: 15px;
+    }
+    .h-name{
+        color: white;
+        font-size: 15px;
+    }
+    .h-comics{
+        color: white;
+        font-size: 15px;
+    }
+    /* --------------add-button------------------------------ */
+    #btn-div{
+        margin-top:15px;
+        display: flex;
+        justify-content: center;
+    }
+    .add-btn{
+        cursor: pointer;
+        background-color: rgb(85, 226, 250);
+        border: 0px ;
+        border-radius: 3px;
+        padding: 6px;
+        color: rgb(225, 7, 7);
+        font-weight: 700;
     }
 }
