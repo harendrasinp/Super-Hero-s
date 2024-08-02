@@ -2,6 +2,8 @@ const userInput=document.querySelector("#user-input");
 const btn=document.querySelector("#btn");
 const imgesection=document.querySelector("#images");
 
+
+let heros;
 userInput.addEventListener("input",()=>callServer(userInput.value));
 btn.addEventListener("click",()=>{
   callServer(userInput.value)
@@ -12,13 +14,13 @@ async function callServer(hname){
     console.log(hname);
     const heroName= await fetch(`https://gateway.marvel.com/v1/public/characters?nameStartsWith=${hname}&apikey=9ab871748d83ae2eb5527ffd69e034de&hash=d35377547e551cd64a60657d2517bb7f?ts=1`)
     let jsonName=await heroName.json();
-    const heros=jsonName["data"]["results"];
+    heros=jsonName["data"]["results"];
     loopfunction(heros);
 };
 
 function loopfunction(heros){
-  heros.forEach(element => {
-      console.log(element);
+  heros.forEach(element=> {
+      // console.log(index);
       const im=element["thumbnail"].path;
       const ext=element["thumbnail"].extension;
       const heroId=element["id"];
@@ -35,13 +37,34 @@ function loopfunction(heros){
                                               <div class="h-comics">Comics: ${heroComics}</div>
                                             </div>
                                                 <div id="btn-div">
-                                                     <button type="submit" class="add-btn">Add to Favourite</button>
+                                                     <button type="submit" class="add-btn" heroPass=${heroId}>Add to Favourite</button>
                                                 </div>`
-      imgesection.append(mainFram)
+      imgesection.append(mainFram);
+      const hBtn=mainFram.querySelector(".add-btn");
+      hBtn.addEventListener("click",()=>{
+              btnFunnction(hBtn);
+      });
+
   });
 }
+// -------------------------hero-name size-reduce-function-----------------------------------
 function nameSize(name){
      return result=name.substring(0,12)
+}
+
+// ----------------------------click-function-on-btn---------------------------------
+function btnFunnction(btn){
+  const hrId=btn.getAttribute("heroPass");
+  heros.forEach(ele=>{
+    if(ele["id"]==hrId){
+      localStorageFunction(ele);
+    }
+  })
+}
+// -----------------------------localStorageFunction------------------------------------------
+function localStorageFunction(ele){
+  const eleId=ele["id"];
+  localStorage.setItem(eleId,JSON.stringify(ele))
 }
         
 
