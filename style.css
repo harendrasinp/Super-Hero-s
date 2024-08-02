@@ -51,20 +51,19 @@ body{
     0%{top:0px}
     100%{top:120px}
 }
-#my-fav{
+#my-fav-btn{
     position: relative;
-    background-color: brown;
-    padding:10px;
+    border: 0px;
     border-radius: 6px;
-    align-self:end;
-    top: -290px;
-    right: 60px;
-}
-#my-fav a{
-    text-decoration: none;
-    color: beige;
-    font-weight: 700;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(169, 8, 8);
+    top: -300px;
+    left:280%;
+    color: white;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 /* -----------------search-box-section------------------------ */
 #search{
