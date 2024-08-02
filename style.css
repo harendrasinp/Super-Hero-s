@@ -157,10 +157,10 @@ body{
         margin-top: 10px;
         display: grid;
         grid-template-columns: repeat(2,2fr);
-        gap: 2rem;
+        gap: 1rem;
     }
     .main-fram{
-        width:200px;
+        width:160px;
         height:380px;
         padding: 10px;
         background-image: linear-gradient(pink,rgb(242, 15, 38),rgb(102, 86, 245));
